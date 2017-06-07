@@ -5,7 +5,14 @@
   <md-card  *ngFor="let project of projects;"
             class="project-card">
     <md-card-header>
-      <img md-card-avatar src="assets/img/{{ project.image }}" />
+      <img md-card-avatar
+           src="assets/img/{{ project.image }}"
+           *ngIf="project.image; else noImage"/>
+      <ng-template #noImage>
+        <div md-card-avatar class="text-avatar">
+          {{ initials(project.name) }}
+        </div>
+      </ng-template>
       <md-card-title>{{ project.name }}</md-card-title>
       <md-card-subtitle>{{ project.team }}</md-card-subtitle>
     </md-card-header>

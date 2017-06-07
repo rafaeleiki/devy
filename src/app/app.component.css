@@ -21,6 +21,13 @@
   margin: 15px;
 }
 
+.text-avatar {
+  vertical-align: middle;
+  text-align: center;
+  line-height: 40px;
+  background-color: #ff4855;
+}
+
 video::-internal-media-controls-download-button {
   display:none;
 }
