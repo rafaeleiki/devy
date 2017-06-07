@@ -1,0 +1,17 @@
+<div class="title-container">
+  <h1>{{title}}</h1>
+</div>
+<div class="container">
+  <md-card  *ngFor="let project of projects;"
+            class="project-card">
+    <md-card-header>
+      <img md-card-avatar src="assets/img/{{ project.image }}" />
+      <md-card-title>{{ project.name }}</md-card-title>
+      <md-card-subtitle>{{ project.team }}</md-card-subtitle>
+    </md-card-header>
+    <video md-card-image src="assets/videos/{{ project.video }}" controls></video>
+    <md-card-content>
+      <p>{{ project.description }}</p>
+    </md-card-content>
+  </md-card>
+</div>
