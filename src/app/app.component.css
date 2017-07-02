@@ -5,37 +5,3 @@
   font-size: 3rem;
   text-align: center;
 }
-
-.container {
-  flex-direction: row;
-  flex: 1;
-  display: flex;
-  flex-flow: row wrap;
-}
-
-.project-card {
-  max-width: 400px;
-  flex: 1;
-  flex-basis: 33%;
-  display: inline-block;
-  margin: 15px;
-}
-
-.text-avatar {
-  vertical-align: middle;
-  text-align: center;
-  line-height: 40px;
-  background-color: #ff4855;
-}
-
-video::-internal-media-controls-download-button {
-  display:none;
-}
-
-video::-webkit-media-controls-enclosure {
-  overflow:hidden;
-}
-
-video::-webkit-media-controls-panel {
-  width: calc(100% + 30px); /* Adjust as needed */
-}

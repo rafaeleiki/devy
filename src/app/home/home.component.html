@@ -1,0 +1,23 @@
+<div class="container">
+  <md-card  *ngFor="let project of projects;"
+            class="project-card mat-elevation-z4">
+    <md-card-header>
+      <img md-card-avatar
+           src="assets/img/{{ project.image }}"
+           *ngIf="project.image; else noImage"/>
+      <ng-template #noImage>
+        <div md-card-avatar class="text-avatar">
+          {{ initials(project.title) }}
+        </div>
+      </ng-template>
+      <md-card-title>{{ project.title }}</md-card-title>
+      <md-card-subtitle>{{ project.team }}</md-card-subtitle>
+    </md-card-header>
+    <video md-card-image src="assets/videos/{{ project.video }}" controls></video>
+    <md-card-content>
+      <p>{{ project.description }}</p>
+      <br />
+      <a routerLink="/project/{{project.id}}" md-raised-button color="primary">Ver projeto</a>
+    </md-card-content>
+  </md-card>
+</div>
