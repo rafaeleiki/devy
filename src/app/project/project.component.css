@@ -1,0 +1,22 @@
+.container {
+  padding: 1em;
+}
+
+.header {
+  margin-bottom: 1em;
+}
+
+.header > * {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.header img {
+  line-height: 100px;
+  width: 100px;
+  height: 100px;
+}
+
+.title {
+  font-size: 120%;
+}

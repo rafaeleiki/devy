@@ -2,40 +2,21 @@
   width: 100%;
   background: #ff4855;
   color: #fff;
-  font-size: 3rem;
-  text-align: center;
-}
-
-.container {
-  flex-direction: row;
-  flex: 1;
+  font-size: 2rem;
   display: flex;
-  flex-flow: row wrap;
 }
 
-.project-card {
-  max-width: 400px;
-  flex: 1;
-  flex-basis: 33%;
-  display: inline-block;
-  margin: 15px;
-}
-
-.text-avatar {
-  vertical-align: middle;
+.title {
   text-align: center;
-  line-height: 40px;
-  background-color: #ff4855;
+  flex: 1;
 }
 
-video::-internal-media-controls-download-button {
-  display:none;
+.menu-trigger {
+  z-index: 10;
 }
 
-video::-webkit-media-controls-enclosure {
-  overflow:hidden;
-}
-
-video::-webkit-media-controls-panel {
-  width: calc(100% + 30px); /* Adjust as needed */
+@media screen and (max-width: 400px) {
+  .title {
+    text-align: right;
+  }
 }
