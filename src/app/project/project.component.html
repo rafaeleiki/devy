@@ -8,7 +8,9 @@
     </div>
   </div>
 
-  <video src="assets/videos/{{ project.video }}" controls></video>
+  <video src="{{ project.video }}" controls>
+    <source src="{{ project.video }}" type='video/webm'/>
+  </video>
 
   <p>{{ project.description }}</p>
 </div>

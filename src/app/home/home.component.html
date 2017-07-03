@@ -13,7 +13,9 @@
       <md-card-title>{{ project.title }}</md-card-title>
       <md-card-subtitle>{{ project.team }}</md-card-subtitle>
     </md-card-header>
-    <video md-card-image src="assets/videos/{{ project.video }}" controls></video>
+    <video md-card-image controls>
+      <source src="{{ project.video }}" type='video/webm'/>
+    </video>
     <md-card-content>
       <p>{{ project.description }}</p>
       <br />
