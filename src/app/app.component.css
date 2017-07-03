@@ -2,6 +2,21 @@
   width: 100%;
   background: #ff4855;
   color: #fff;
-  font-size: 3rem;
+  font-size: 2rem;
+  display: flex;
+}
+
+.title {
   text-align: center;
+  flex: 1;
+}
+
+.menu-trigger {
+  z-index: 10;
+}
+
+@media screen and (max-width: 400px) {
+  .title {
+    text-align: right;
+  }
 }

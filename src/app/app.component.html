@@ -1,4 +1,21 @@
-<div class="title-container">
-  <h1>{{title}}</h1>
-</div>
-<router-outlet></router-outlet>
+<md-sidenav-container class="example-container">
+  <md-sidenav #sidenav mode="over" class="app-sidenav">
+    <md-nav-list>
+      <a routerLink="/" md-list-item>Home</a>
+      <a *ngFor="let project of projects;"
+         routerLink="/project/{{project.id}}" md-list-item>
+        {{ project.title }}
+      </a>
+    </md-nav-list>
+  </md-sidenav>
+
+  <md-toolbar class="title-container">
+    <button type="button" md-button class="menu-trigger" (click)="sidenav.open()">
+      <md-icon>more_vert</md-icon>
+    </button>
+    <span class="title">DevCotuca</span>
+  </md-toolbar>
+
+  <router-outlet></router-outlet>
+
+</md-sidenav-container>
