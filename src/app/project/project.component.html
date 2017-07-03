@@ -1,6 +1,16 @@
-<div *ngIf="project">
-  <h2>{{project.name}}</h2>
-  <div>
-    <label>Título: {{project.title}}</label>
+<div *ngIf="project" class="container">
+  <div class="header">
+    <img src="assets/img/{{ project.image }}"
+         *ngIf="project.image; else noImage"/>
+    <div>
+      <h1 class="title">{{project.title}}</h1>
+      <label>Autores: {{project.team}}</label>
+    </div>
   </div>
+
+  <div class="video-container">
+    <video src="assets/videos/{{ project.video }}" controls></video>
+  </div>
+
+  <p>{{ project.description }}</p>
 </div>
