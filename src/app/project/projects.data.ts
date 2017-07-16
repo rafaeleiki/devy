@@ -43,7 +43,7 @@ export const PROJECTS = [
   {
     id: 6,
     title: 'Solidari',
-    team: 'Gabriela e Mayara - PD15 (matutino)',
+    team: 'Gabriela e Mayra - PD15 (matutino)',
     description: `Criação de uma plataforma para interligação de
       ONGs, voluntários e doadores, colaborando com a criação, articulação e
       desenvolvimento destas iniciativas sociais.`,
