@@ -13,4 +13,21 @@
   </video>
 
   <p>{{ project.description }}</p>
+
+  <hr />
+
+  <h2 class="title">Conquistas</h2>
+
+  <button md-fab
+          class="achievement"
+          color="accent"
+          type="button"
+          *ngFor="let achievement of project.achievements;"
+          mdTooltip="{{ achievement.description }}"
+          mdTooltipPosition="right"
+  >
+    <md-icon>
+      {{ achievement.icon }}
+    </md-icon>
+  </button>
 </div>
