@@ -18,5 +18,10 @@
 }
 
 .title {
-  font-size: 120%;
+  font-size: 180%;
+  margin-bottom: 0.5em;
+}
+
+.achievement {
+  margin: auto 0.5em;
 }

@@ -8,7 +8,7 @@ import {PROJECTS} from '../project/projects.data';
 })
 export class HomeComponent {
 
-  private projects = PROJECTS;
+  projects = PROJECTS;
 
   initials(projectName: string): string {
     return projectName.split(' ').map((word) => {

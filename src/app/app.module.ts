@@ -10,6 +10,7 @@ import { RouterModule } from '@angular/router';
 import { ProjectComponent } from './project/project.component';
 import { HomeComponent } from './home/home.component';
 import {ProjectService} from './project/project.service';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 const routes = RouterModule.forRoot([
   {
@@ -35,6 +36,7 @@ const routes = RouterModule.forRoot([
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     FormsModule,
     HttpModule,
     MaterialModule,
