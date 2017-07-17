@@ -9,7 +9,7 @@ import {MaterialModule} from '@angular/material';
 import { RouterModule } from '@angular/router';
 import { ProjectComponent } from './project/project.component';
 import { HomeComponent } from './home/home.component';
-import {ProjectService} from "./project/project.service";
+import {ProjectService} from './project/project.service';
 
 const routes = RouterModule.forRoot([
   {
