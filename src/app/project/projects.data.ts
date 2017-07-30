@@ -46,7 +46,9 @@ export const PROJECTS: Project[] = [
     description: `Dispositivo para leitura de braile
       em uma única célula.`,
     video: 'https://drive.google.com/uc?export=download&id=0BxgB0meBhPaqRWpFSTRRZnFBSDg',
-    achievements: [],
+    achievements: [
+      researchPlan,
+    ],
   },
   {
     id: 3,
@@ -66,6 +68,7 @@ export const PROJECTS: Project[] = [
     achievements: [
       development,
       support,
+      researchPlan,
     ],
   },
   {
@@ -92,6 +95,7 @@ export const PROJECTS: Project[] = [
       program,
       interfacePrototypes,
       development,
+      researchPlan,
     ],
   },
 ];
