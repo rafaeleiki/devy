@@ -25,11 +25,18 @@ const development: Achievement = {
   description: 'Está em fase de desenvolvimento'
 };
 
+const internationalFairFinalist = (fairList): Achievement => ({
+  icon: 'flight takeoff',
+  description: `Finalista das feiras internacionais: ${fairList.join(', ')}`
+});
+
 export const PROJECTS: Project[] = [
   {
     id: 1,
     title: 'Alpha Study',
     team: 'Nathália e Thaís - PD15 (matutino)',
+    advisor: 'Andréia Cristina de Souza',
+    mentors: ['André Luís dos Reis Gomes de Carvalho'],
     description: `Porque não juntar as funcionalidades
       de agenda e plano de estudos em
       um único aplicativo?`,
@@ -43,25 +50,37 @@ export const PROJECTS: Project[] = [
     id: 2,
     title: 'Braile Reader',
     team: 'Jonaphael, Pedro, Yohann - PD16 (vespertino)',
+    advisor: 'Sérgio Luiz Moral Marques',
+    mentors: ['Andréia Cristina de Souza', 'Rafael Eiki Matheus Imamura'],
     description: `Dispositivo para leitura de braile
       em uma única célula.`,
     video: 'https://drive.google.com/uc?export=download&id=0BxgB0meBhPaqRWpFSTRRZnFBSDg',
     achievements: [
       researchPlan,
+      development,
+      internationalFairFinalist(['Mostratec 2017']),
     ],
   },
   {
     id: 3,
     title: 'Interface Visual de Proteínas',
     team: 'Gabriel, Guilherme, Júlia - PD16 (matutino)',
+    advisor: 'Patrícia Gagliardo de Campos',
+    mentors: ['Marcelo Mendes Brandão'],
     description: `Visualização de proteínas em interface visual.`,
     video: 'https://drive.google.com/uc?export=download&id=0BxgB0meBhPaqbVZ6aWZ5ZkEzak0',
-    achievements: [],
+    achievements: [
+      researchPlan,
+      support,
+      development,
+    ],
   },
   {
     id: 4,
     title: 'Simas!',
     team: 'Emílio e Henrique - PD15 (matutino)',
+    advisor: 'Simone Pierini Facini Rocha',
+    mentors: ['Sérgio Luiz Moral Marques'],
     description: `Aprendizado de programação com
       uso de mascote em realidade aumentada.`,
     video: 'https://drive.google.com/uc?export=download&id=0BxgB0meBhPaqb0NqcF82RUIxNUk',
@@ -75,18 +94,23 @@ export const PROJECTS: Project[] = [
     id: 5,
     title: 'Sine',
     team: 'Igor e Vitor - PD16 (matutino)',
+    advisor: 'Francisco da Fonseca Rodrigues',
+    mentors: [],
     description: `Inclusão digital de seniores por meio
       de análise de aspectos de interface.`,
     video: 'https://drive.google.com/uc?export=download&id=0BxgB0meBhPaqeFJBNXlVV1ZCYlk',
     achievements: [
       program,
       researchPlan,
+      development,
     ],
   },
   {
     id: 6,
     title: 'Solidari',
     team: 'Gabriela e Mayra - PD15 (matutino)',
+    advisor: 'Sérgio Luiz Moral Marques',
+    mentors: ['Simone Pierini Facini Rocha'],
     description: `Criação de uma plataforma para interligação de
       ONGs, voluntários e doadores, colaborando com a criação, articulação e
       desenvolvimento destas iniciativas sociais.`,

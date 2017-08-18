@@ -4,7 +4,11 @@
          *ngIf="project.image; else noImage"/>
     <div>
       <h1 class="title">{{project.title}}</h1>
-      <label>Autores: {{project.team}}</label>
+      <label class="team-info">Autores: {{project.team}}</label>
+      <label class="team-info">Orientador(a): {{project.advisor}}</label>
+      <label class="team-info" *ngIf="project.mentors.length > 0">
+        Coorientadores: {{project.mentors.join(', ')}}
+      </label>
     </div>
   </div>
 

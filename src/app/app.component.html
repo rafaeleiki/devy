@@ -2,7 +2,8 @@
   <md-sidenav #sidenav mode="over" class="app-sidenav">
     <md-nav-list>
       <a routerLink="/" md-list-item>Home</a>
-      <a *ngFor="let project of projects;"
+      <a md-list-item>Projetos</a>
+      <a *ngFor="let project of projects;" class="project-link"
          routerLink="/project/{{project.id}}" md-list-item>
         {{ project.title }}
       </a>

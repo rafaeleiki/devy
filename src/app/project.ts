@@ -7,6 +7,8 @@ export interface Project {
   id: number;
   title: string;
   team: string;
+  advisor: string;
+  mentors: string[];
   description: string;
   video: string;
   image?: string;
