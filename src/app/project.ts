@@ -9,6 +9,7 @@ export interface Project {
   team: string;
   advisor: string;
   mentors: string[];
+  shortDescription: string;
   description: string;
   video: string;
   image?: string;

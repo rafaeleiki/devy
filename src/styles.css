@@ -12,4 +12,3 @@ video::-webkit-media-controls-enclosure {
 video::-webkit-media-controls-panel {
   width: calc(100% + 30px); /* Adjust as needed */
 }
-
