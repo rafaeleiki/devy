@@ -3,7 +3,8 @@
     <md-nav-list>
       <a routerLink="/" md-list-item>Home</a>
       <a routerLink="/about" md-list-item>Sobre</a>
-      <a md-list-item>Projetos 2017</a>
+      <md-divider></md-divider>
+      <h3 md-subheader>Projetos 2017</h3>
       <a *ngFor="let project of projects;" class="project-link"
          routerLink="/project/{{project.id}}" md-list-item>
         {{ project.title }}
