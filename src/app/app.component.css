@@ -1,6 +1,6 @@
 .title-container {
   width: 100%;
-  background: #ff4855;
+  background: #674ea7;
   color: #fff;
   font-size: 2rem;
   display: flex;
@@ -9,6 +9,16 @@
 .title {
   text-align: center;
   flex: 1;
+  display: block;
+  height: 100%;
+  line-height: 64px;
+}
+
+.title-pic {
+  max-height: 100%;
+  display: inline;
+  text-align: center;
+  vertical-align: top;
 }
 
 .menu-trigger {
