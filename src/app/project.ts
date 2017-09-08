@@ -1,6 +1,7 @@
 export interface Achievement {
   icon: string;
   description: string;
+  color: string;
 }
 
 export interface Project {
