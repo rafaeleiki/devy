@@ -61,7 +61,7 @@ export const PROJECTS: Project[] = [
     description: `Porque não juntar as funcionalidades
       de agenda e plano de estudos em
       um único aplicativo?`,
-    video: 'https://drive.google.com/uc?export=download&id=0BxgB0meBhPaqZjlnUGI1Wk5EME0',
+    video: 'https://www.youtube.com/embed/qt9ZSYdbuRU',
     image: 'alpha-study.png',
     achievements: [
       development,
@@ -78,7 +78,7 @@ export const PROJECTS: Project[] = [
       em uma única célula.`,
     description: `Dispositivo para leitura de braile
       em uma única célula.`,
-    video: 'https://drive.google.com/uc?export=download&id=0BxgB0meBhPaqRWpFSTRRZnFBSDg',
+    video: 'https://www.youtube.com/embed/DQrrgztByY8',
     achievements: [
       researchPlan,
       development,
@@ -94,7 +94,7 @@ export const PROJECTS: Project[] = [
     mentors: ['Marcelo Mendes Brandão'],
     shortDescription: `Visualização de proteínas em interface visual.`,
     description: `Visualização de proteínas em interface visual.`,
-    video: 'https://drive.google.com/uc?export=download&id=0BxgB0meBhPaqbVZ6aWZ5ZkEzak0',
+    video: 'https://www.youtube.com/embed/mdhpdorGUTQ',
     achievements: [
       researchPlan,
       support,
@@ -111,7 +111,7 @@ export const PROJECTS: Project[] = [
       uso de mascote em realidade aumentada.`,
     description: `Aprendizado de programação com
       uso de mascote em realidade aumentada.`,
-    video: 'https://drive.google.com/uc?export=download&id=0BxgB0meBhPaqb0NqcF82RUIxNUk',
+    video: 'https://www.youtube.com/embed/f0Yp_ojQt1o',
     achievements: [
       development,
       support,
@@ -130,7 +130,7 @@ export const PROJECTS: Project[] = [
       de análise de aspectos de interface.`,
     description: `Inclusão digital de seniores por meio
       de análise de aspectos de interface.`,
-    video: 'https://drive.google.com/uc?export=download&id=0BxgB0meBhPaqeFJBNXlVV1ZCYlk',
+    video: 'https://www.youtube.com/embed/2_mPCaNDSi4',
     achievements: [
       program,
       researchPlan,
@@ -150,7 +150,7 @@ export const PROJECTS: Project[] = [
     description: `Criação de uma plataforma para interligação de
       ONGs, voluntários e doadores, colaborando com a criação, articulação e
       desenvolvimento destas iniciativas sociais.`,
-    video: 'https://drive.google.com/uc?export=download&id=0BxgB0meBhPaqbjIxd3NkVk1QVms',
+    video: 'https://www.youtube.com/embed/0AuKxAGaJyo',
     achievements: [
       program,
       interfacePrototypes,

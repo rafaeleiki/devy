@@ -12,9 +12,11 @@
     </div>
   </div>
 
-  <video src="{{ project.video }}" controls>
-    <source src="{{ project.video }}" type='video/webm'/>
-  </video>
+  <iframe width="560" height="315"
+          [src]="videoUrl()"
+          frameborder="0"
+          allowfullscreen>
+  </iframe>
 
   <p>{{ project.description }}</p>
 

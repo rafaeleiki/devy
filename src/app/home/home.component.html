@@ -1,13 +1,4 @@
 <div class="container">
-  <div class="apply-section">
-    <label>Inscrições abertas para a turma de 2018 até 30/09!</label>
-    <a href="https://goo.gl/forms/gO3m3tMfU3Tw4f963" md-raised-button color="primary" target="_blank">
-      Inscrever equipe
-    </a>
-    <a href="assets/docs/regulamento.pdf" md-raised-button target="_blank">
-      Ver regulamento
-    </a>
-  </div>
 
   <md-card  *ngFor="let project of projects;"
             class="project-card mat-elevation-z4">
@@ -23,9 +14,11 @@
       <md-card-title>{{ project.title }}</md-card-title>
       <md-card-subtitle>{{ project.team }}</md-card-subtitle>
     </md-card-header>
-    <video md-card-image controls>
-      <source src="{{ project.video }}" type='video/webm'/>
-    </video>
+    <iframe width="560" height="315"
+            [src]="sanitizeUrl(project.video)"
+            frameborder="0"
+            allowfullscreen>
+    </iframe>
     <md-card-content>
       <p>{{ project.description }}</p>
       <br />
