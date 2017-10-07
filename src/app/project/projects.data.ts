@@ -3,31 +3,49 @@ import {Achievement, Project} from '../project';
 const researchPlan: Achievement = {
   icon: 'search',
   description: 'Concluiu o plano de pesquisa',
+  color: '#f19fff',
 };
 
 const program: Achievement = {
   icon: 'directions_run',
   description: 'Participou de um programa externo para desenvolver o projeto',
+  color: '#f19fff',
 };
 
 const support: Achievement = {
   icon: 'supervisor_account',
   description: 'Possui algum apoio externo para o projeto',
+  color: '#f19fff',
 };
 
 const interfacePrototypes: Achievement = {
   icon: 'style',
   description: 'Concluiu os protótipos das interfaces',
+  color: '#f19fff',
 };
 
 const development: Achievement = {
   icon: 'code',
-  description: 'Está em fase de desenvolvimento'
+  description: 'Está em fase de desenvolvimento',
+  color: '#f19fff',
 };
+
+const regionalFairFinalist = (fairList): Achievement => ({
+  icon: 'bookmark',
+  description: `Finalista das feiras regionais: ${fairList.join(', ')}`,
+  color: '#f19fff',
+});
+
+const nationalFairFinalist = (fairList): Achievement => ({
+  icon: 'flag',
+  description: `Finalista das feiras nacionais: ${fairList.join(', ')}`,
+  color: '#a185ff',
+});
 
 const internationalFairFinalist = (fairList): Achievement => ({
   icon: 'flight takeoff',
-  description: `Finalista das feiras internacionais: ${fairList.join(', ')}`
+  description: `Finalista das feiras internacionais: ${fairList.join(', ')}`,
+  color: '#ffa662',
 });
 
 export const PROJECTS: Project[] = [
@@ -47,6 +65,7 @@ export const PROJECTS: Project[] = [
     image: 'alpha-study.png',
     achievements: [
       development,
+      regionalFairFinalist(['Bragantec 2017']),
     ],
   },
   {
@@ -63,6 +82,7 @@ export const PROJECTS: Project[] = [
     achievements: [
       researchPlan,
       development,
+      regionalFairFinalist(['Bragantec 2017']),
       internationalFairFinalist(['Mostratec 2017']),
     ],
   },
@@ -96,6 +116,8 @@ export const PROJECTS: Project[] = [
       development,
       support,
       researchPlan,
+      regionalFairFinalist(['Bragantec 2017']),
+      nationalFairFinalist(['Febrat 2017', 'Mostractc 2017']),
     ],
   },
   {
@@ -113,6 +135,7 @@ export const PROJECTS: Project[] = [
       program,
       researchPlan,
       development,
+      nationalFairFinalist(['Febrat 2017', 'Mostractc 2017']),
     ],
   },
   {
@@ -133,6 +156,8 @@ export const PROJECTS: Project[] = [
       interfacePrototypes,
       development,
       researchPlan,
+      regionalFairFinalist(['Bragantec 2017']),
+      nationalFairFinalist(['Febrat 2017', 'Mostractc 2017']),
     ],
   },
 ];

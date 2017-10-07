@@ -24,11 +24,12 @@
 
   <button md-fab
           class="achievement"
-          color="accent"
           type="button"
           *ngFor="let achievement of project.achievements;"
+          color="{{ achievement.color }}"
           mdTooltip="{{ achievement.description }}"
           mdTooltipPosition="right"
+          [ngStyle]="{ 'background-color': achievement.color }"
   >
     <md-icon>
       {{ achievement.icon }}
