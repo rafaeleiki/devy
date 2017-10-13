@@ -30,6 +30,12 @@ export const development: Achievement = {
   color: '#f19fff',
 };
 
+export const devicePrototype : Achievement = {
+  icon: 'memory',
+  description: `Concluiu o protótipo do dispositivo`,
+  color: '#f19fff',
+};
+
 export const regionalFairFinalist = (fairList): Achievement => ({
   icon: 'bookmark',
   description: `Finalista das feiras regionais: ${fairList.join(', ')}`,
@@ -45,5 +51,17 @@ export const nationalFairFinalist = (fairList): Achievement => ({
 export const internationalFairFinalist = (fairList): Achievement => ({
   icon: 'flight takeoff',
   description: `Finalista das feiras internacionais: ${fairList.join(', ')}`,
+  color: '#ffa662',
+});
+
+export const awarded = (fairList): Achievement => ({
+  icon: 'star rate',
+  description: `Premiado em feiras:   ${fairList.join(', \n')}`,
+  color: '#e9ef0f',
+});
+
+export const selectedByPrograms = (fairList): Achievement => ({
+  icon: 'class',
+  description: `Selecionados por programas:   ${fairList.join(', \n')}`,
   color: '#ffa662',
 });
