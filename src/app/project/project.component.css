@@ -26,6 +26,10 @@
   margin: auto 0.5em;
 }
 
+.figures {
+  display: inline-block;
+}
+
 .team-info {
   display: block;
   margin: 0.5em 0;
