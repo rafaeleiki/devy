@@ -16,11 +16,11 @@ export const simas: Project = {
   mentors: ['Sérgio Luiz Moral Marques'],
   shortDescription: `Aprendizado de programação com
       uso de mascote em realidade aumentada.`,
-  description: `Aplicativo para o aprendizado de 
-		lógica de programação voltado para crianças 
-		com uso de mascote em realidade aumentada que, 
-		através de uma linguagem de blocos, busca 
-		introduzir conceitos da área de informática 
+  description: `Aplicativo para o aprendizado de
+		lógica de programação voltado para crianças
+		com uso de mascote em realidade aumentada que,
+		através de uma linguagem de blocos, busca
+		introduzir conceitos da área de informática
 		durante o desenvolvimento dos usuários.`,
   video: 'https://www.youtube.com/embed/f0Yp_ojQt1o',
   achievements: [
