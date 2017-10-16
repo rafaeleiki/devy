@@ -7,7 +7,7 @@ export const alphaStudy: Project = {
   team: 'Nathália e Thaís - PD15 (matutino)',
   advisor: 'Andréia Cristina de Souza',
   mentors: ['André Luís dos Reis Gomes de Carvalho'],
-  shortDescription: `Aplicativo de organização do tempo dedicado aos estudos.`,
+  shortDescription: `Aplicativo de organização do tempo dedicado aos estudos`,
   description: `Pensando na realidade e cotidiano dos alunos do Colégio Técnico
  de Campinas, foi realizada uma pesquisa, com formulário 
 anônimo, no referido local, com o objetivo de averiguar o perfil
@@ -24,9 +24,7 @@ então iniciou-se o desenvolvimento de um aplicativo para
 de Estudo integradas, visando a praticidade e usabilidade dos 
 usuários e tendo como objetivo principal, auxiliar no
  gerenciamento dos horários e no desempenho acadêmico do 
-estudante em questão.
-
-Palavras Chave: Organização; Agenda; Plano de Estudos;`,
+estudante em questão.Palavras Chave: Organização; Agenda; Plano de Estudos;`,
   video: 'https://www.youtube.com/embed/qt9ZSYdbuRU',
   image: 'alpha-study.png',
   achievements: [
