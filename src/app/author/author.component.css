@@ -1,0 +1,13 @@
+.description {
+  max-width: 500px;
+  text-align: justify;
+}
+
+.author-pic {
+  width: 300px;
+  height: auto;
+}
+
+.field-name {
+  font-weight: bold;
+}

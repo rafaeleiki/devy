@@ -9,9 +9,12 @@ import {MaterialModule} from '@angular/material';
 import { RouterModule } from '@angular/router';
 import { ProjectComponent } from './project/project.component';
 import { HomeComponent } from './home/home.component';
-import {ProjectService} from './project/project.service';
-import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import { ProjectService } from './project/project.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutComponent } from './about/about.component';
+import { AuthorComponent } from './author/author.component';
+import { AuthorsListComponent } from './authors-list/authors-list.component';
+import {AuthorService} from './author/author.service';
 
 const routes = RouterModule.forRoot([
   {
@@ -24,7 +27,15 @@ const routes = RouterModule.forRoot([
   },
   {
     path: 'project/:id',
-    component: ProjectComponent
+    component: ProjectComponent,
+  },
+  {
+    path: 'author/:id',
+    component: AuthorComponent,
+  },
+  {
+    path: 'authors',
+    component: AuthorsListComponent,
   },
   {
     path: '',
@@ -38,7 +49,9 @@ const routes = RouterModule.forRoot([
     AppComponent,
     ProjectComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    AuthorComponent,
+    AuthorsListComponent
   ],
   imports: [
     BrowserModule,
@@ -50,6 +63,7 @@ const routes = RouterModule.forRoot([
   ],
   providers: [
     ProjectService,
+    AuthorService,
   ],
   bootstrap: [AppComponent]
 })

@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  max-height: 100%;
+}
+
+.author-card {
+  flex: 1;
+  max-width: 300px;
+}
+
+.author-card-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: 0.5em auto;
+}
+
+.link {
+  margin: 0 auto;
+  display: block;
+}

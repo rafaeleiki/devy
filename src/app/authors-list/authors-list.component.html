@@ -1,0 +1,16 @@
+<div class="padded container">
+  <md-card  *ngFor="let author of authors;" class="author-card mat-elevation-z4">
+    <md-card-header>
+      <md-card-title>{{ author.name }}</md-card-title>
+      <md-card-subtitle>Curso: {{ author.course }}</md-card-subtitle>
+    </md-card-header>
+
+    <md-card-content>
+      <img src="{{ author.picture }}" class="author-card-pic" />
+      <a routerLink="/author/{{ author.id }}" md-raised-button color="primary" class="link">
+        <md-icon>person</md-icon>
+        Ver mais
+      </a>
+    </md-card-content>
+  </md-card>
+</div>
