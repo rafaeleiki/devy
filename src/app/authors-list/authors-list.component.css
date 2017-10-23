@@ -11,6 +11,31 @@
   margin: 0.5em;
 }
 
+.veteran:before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  width: 1px;
+  height: 1px;
+  border: 25px transparent solid;
+  border-top-color: #ff8036;
+  border-right-color: #ff8036;
+  display: block;
+}
+
+.veteran:after {
+  content: 'Sênior';
+  font-size: 0.7em;
+  font-weight: bold;
+  position: absolute;
+  transform: rotate(45deg);
+  top: 13px;
+  right: 0px;
+  display: block;
+}
+
 .author-card-pic {
   width: 150px;
   height: 150px;

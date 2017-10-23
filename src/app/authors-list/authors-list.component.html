@@ -1,5 +1,7 @@
 <div class="padded container">
-  <md-card  *ngFor="let author of authors;" class="author-card mat-elevation-z4">
+  <md-card  *ngFor="let author of authors;"
+            class="author-card mat-elevation-z4"
+            [ngClass]="{ 'veteran': veteran(author) }">
     <md-card-header>
       <md-card-title>{{ author.name }}</md-card-title>
       <md-card-subtitle>Ano: {{ author.classOf }}</md-card-subtitle>

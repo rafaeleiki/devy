@@ -20,4 +20,7 @@ export class AuthorsListComponent implements OnInit {
       .then(authors => this.authors = authors);
   }
 
+  veteran(author: Author): boolean {
+    return author.years.length > 1;
+  }
 }
