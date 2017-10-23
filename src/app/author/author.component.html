@@ -22,4 +22,15 @@
   </div>
 
   <p class="description">{{ author.description }}</p>
+
+  <hr />
+
+  <div *ngIf="author.projects.length > 0">
+    <label class="field-name">Projetos:</label>
+    <ol>
+      <li *ngFor="let project of author.projects;">
+        <a href="/project/{{ project.id }}">{{ project.title }}</a>
+      </li>
+    </ol>
+  </div>
 </div>

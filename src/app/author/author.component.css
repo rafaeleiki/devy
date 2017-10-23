@@ -11,3 +11,7 @@
 .field-name {
   font-weight: bold;
 }
+
+ol {
+  margin: 0.5em 1em;
+}

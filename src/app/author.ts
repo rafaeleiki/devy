@@ -7,4 +7,5 @@ export interface Author {
   role: string;
   description: string;
   years: number[];
+  projects: any[];
 }
