@@ -3,6 +3,7 @@ export interface Author {
   name: string;
   picture: string;
   course: string;
+  classOf: number;
   role: string;
   description: string;
   years: number[];

@@ -2,6 +2,7 @@
   <md-card  *ngFor="let author of authors;" class="author-card mat-elevation-z4">
     <md-card-header>
       <md-card-title>{{ author.name }}</md-card-title>
+      <md-card-subtitle>Ano: {{ author.classOf }}</md-card-subtitle>
       <md-card-subtitle>Curso: {{ author.course }}</md-card-subtitle>
     </md-card-header>
 
