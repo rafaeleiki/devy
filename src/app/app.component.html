@@ -1,8 +1,11 @@
-<md-sidenav-container class="example-container">
+<md-sidenav-container class="main-container">
   <md-sidenav #sidenav mode="over" class="app-sidenav">
     <md-nav-list>
       <a routerLink="/" md-list-item>Home</a>
       <a routerLink="/about" md-list-item>Sobre</a>
+      <md-divider></md-divider>
+      <h3 md-subheader>Projetos 2018</h3>
+      <a routerLink="/authors" md-list-item>Alunos</a>
       <md-divider></md-divider>
       <h3 md-subheader>Projetos 2017</h3>
       <a *ngFor="let project of projects;" class="project-link"

@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  max-height: 100%;
+  flex-wrap: wrap;
+}
+
+.header {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: #674ea717;
+}
+
+.header label {
+  display: block;
+  padding: 0.5em;
+  font-size: 2em;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.author-card {
+  flex: 1;
+  max-width: 300px;
+  min-width: 300px;
+  margin: 0.5em;
+}
+
+.veteran:before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  width: 1px;
+  height: 1px;
+  border: 25px transparent solid;
+  border-top-color: #ff8036;
+  border-right-color: #ff8036;
+  display: block;
+}
+
+.veteran:after {
+  content: 'Sênior';
+  font-size: 0.7em;
+  font-weight: bold;
+  position: absolute;
+  transform: rotate(45deg);
+  top: 13px;
+  right: 0px;
+  display: block;
+}
+
+.author-card-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: 0.5em auto;
+}
+
+.link {
+  margin: 0 auto;
+  display: block;
+}

@@ -1,0 +1,36 @@
+<div *ngIf="author" class="padded">
+  <img src="{{author.picture}}" class="author-pic"/>
+
+  <div class="group">
+    <label class="field-name">Nome: </label>
+    <label>{{ author.name }}</label>
+  </div>
+
+  <div class="group">
+    <label class="field-name">Curso: </label>
+    <label>{{ author.course }} ({{ author.classOf }})</label>
+  </div>
+
+  <div class="group">
+    <label class="field-name">Nível: </label>
+    <label>{{ author.role }}</label>
+  </div>
+
+  <div class="group">
+    <label class="field-name">Participa(ou) nos anos: </label>
+    <label>{{ author.years.join(', ') }}</label>
+  </div>
+
+  <p class="description">{{ author.description }}</p>
+
+  <hr />
+
+  <div *ngIf="author.projects.length > 0">
+    <label class="field-name">Projetos:</label>
+    <ol>
+      <li *ngFor="let project of author.projects;">
+        <a href="/project/{{ project.id }}">{{ project.title }}</a>
+      </li>
+    </ol>
+  </div>
+</div>
