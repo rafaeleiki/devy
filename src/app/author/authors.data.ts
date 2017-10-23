@@ -21,11 +21,13 @@ export const AUTHORS: Author[] = [
     picture: 'assets/img/students/beatriz.jpg',
     role: 'Junior',
     years: [2018],
-    description: `Gosto bastante de informática e também de biologia
-    e gostaria de fazer algum projeto que envolvesse esses dois.
-    Também gosto de ajudar o meio, então seria bem legal um projeto
-    que fizesse justo isso. Trabalho bastante e sou boa na área web,
-    mas ano que vem irei aprender Android também e acho que vou gostar.`,
+    description: ` A ciência se tornou uma grande paixão
+    que cultivo pelo curiosidade e vontade de entender como
+    as coisas no nosso universo funcionam. Quando se
+    trata desse assunto não há esforço que não faça para
+    obter as resposta ou chegar a conclusão de um projeto.
+    Meu envolvimento e dedicação serão completos para o
+    sucesso do trabalho.`,
     projects: [],
   },
   {
